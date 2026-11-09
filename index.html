@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#080b17">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Kakobuy Links – Lista Linków, QC i Spreadsheet | Polska</title>
+<meta name="description" content="Kakobuy links: polski przewodnik po linkach, spreadsheet, zdjęciach QC, rozmiarach i wysyłce. Odkryj kategorie i 20 praktycznych poradników.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Kakobuy Links | Polski przewodnik">
+<meta property="og:description" content="Linki, kategorie produktów, kontrola QC i porady zakupowe w jednym miejscu.">
+<style>
+:root{
+--bg:#080b17;
+--panel:#101629;
+--line:#29334a;
+--ink:#f3f7ff;
+--muted:#aebbd0;
+--lime:#d9ff68;
+--pink:#ff64bc;
+--cyan:#6cecff;
+--violet:#9b83ff;
+--radius:22px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font:16px/1.75 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+overflow-x:hidden
+}
+body:before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-1;
+pointer-events:none;
+background:
+radial-gradient(ellipse at 90% 8%,#53266c65,transparent 42%),
+radial-gradient(ellipse at 0% 55%,#12526650,transparent 45%),
+linear-gradient(#ffffff05 1px,transparent 1px),
+linear-gradient(90deg,#ffffff05 1px,transparent 1px);
+background-size:auto,auto,56px 56px,56px 56px;
+mask-image:linear-gradient(#000 65%,transparent)
+}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{
+outline:3px solid var(--lime);
+outline-offset:5px
+}
+button,summary{font:inherit}
+button{cursor:pointer}
+.wrap{width:min(1240px,calc(100% - 42px));margin:auto}
+.skip{
+position:absolute;top:-90px;left:10px;
+background:var(--lime);color:#080b17;padding:10px;z-index:100
+}
+.skip:focus{top:10px}
+.mono,.eyebrow,.index-no,.stamp{
+font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+letter-spacing:.08em
+}
+.site-header{
+position:sticky;top:0;z-index:30;
+background:#080b17ed;
+border-bottom:1px solid #ffffff18;
+backdrop-filter:blur(12px)
+}
+.header-inner{
+min-height:74px;display:flex;align-items:center;
+justify-content:space-between;gap:20px
+}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px;font-weight:900}
+.logo-icon{
+width:43px;height:43px;display:grid;place-items:center;
+background:var(--lime);color:#10131c;
+font-size:22px;font-weight:1000;
+clip-path:polygon(0 0,84% 0,100% 20%,100% 100%,16% 100%,0 80%)
+}
+.logo small{display:block;font-size:9px;color:var(--muted);letter-spacing:3px;line-height:1}
+.logo b{font-size:17px;letter-spacing:-.5px}
+.nav{display:flex;gap:26px;align-items:center}
+.nav a{text-decoration:none;font-size:13px;font-weight:700;color:#c4cddd}
+.nav a:hover{color:var(--lime)}
+.nav .nav-cta{
+background:var(--lime);color:#0b1020;
+padding:10px 17px;border-radius:100px
+}
+.hero{
+min-height:calc(100svh - 74px);
+display:grid;grid-template-columns:1.06fr .94fr;
+align-items:center;gap:25px;position:relative;
+padding-block:65px 80px
+}
+.hero-copy{position:relative;z-index:2}
+.eyebrow{
+display:flex;align-items:center;gap:11px;
+color:var(--lime);font-size:11px;font-weight:800;text-transform:uppercase
+}
+.eyebrow:before{
+content:"";width:29px;height:2px;background:currentColor
+}
+h1,h2,h3,p{margin-top:0}
+h1{
+font-size:clamp(4.3rem,9vw,9rem);
+font-weight:1000;line-height:.88;letter-spacing:-.09em;
+margin:25px 0 30px;text-transform:uppercase
+}
+h1 span{display:block}
+h1 .outlined{
+color:transparent;
+-webkit-text-stroke:2px var(--cyan);
+text-shadow:0 0 55px #6cecff40;
+font-style:normal
+}
+.hero-intro{max-width:530px;color:#d0d9e9;font-size:18px;line-height:1.85}
+.hero-intro strong{color:#fff}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{
+display:inline-flex;align-items:center;justify-content:center;
+gap:14px;padding:15px 23px;border-radius:13px;
+text-decoration:none;font-weight:850;font-size:14px;
+transition:transform .2s,background .2s
+}
+.btn:hover{transform:translateY(-3px)}
+.btn-primary{background:var(--lime);color:#121522}
+.btn-secondary{border:1px solid #ffffff65;background:#ffffff08}
+.btn-secondary:hover{background:#ffffff1c}
+.btn span{font-size:18px}
+.hero-foot{
+display:flex;gap:24px;flex-wrap:wrap;margin-top:39px;
+font-size:11px;text-transform:uppercase;color:#c3cce1
+}
+.hero-foot b{color:var(--cyan)}
+.orbit-zone{
+height:570px;position:relative;display:grid;
+place-items:center;isolation:isolate
+}
+.orbit-zone:before{
+content:"";position:absolute;width:90%;aspect-ratio:1;
+background:radial-gradient(circle,#9b83ff35,transparent 65%);
+filter:blur(30px)
+}
+.orbit{
+position:relative;width:min(100%,510px);
+aspect-ratio:1;display:grid;place-items:center
+}
+.orbit:before,.orbit:after{
+content:"";position:absolute;border-radius:50%;
+inset:5%;border:1px solid #91dfff45;
+transform:rotateX(68deg) rotate(-25deg);
+box-shadow:0 0 45px #6cecff18
+}
+.orbit:after{
+inset:1%;border:2px solid #ff64bc8e;
+transform:rotateY(68deg) rotate(35deg);
+box-shadow:0 0 60px #ff64bc35
+}
+.orbit-ring{
+position:absolute;inset:12%;border-radius:50%;
+border:1px dashed #ffffff50;
+transform:rotate(-28deg)
+}
+.planet{
+width:69%;aspect-ratio:1;border-radius:50%;
+position:relative;overflow:hidden;
+background:
+radial-gradient(circle at 25% 20%,#fff9,transparent 12%),
+radial-gradient(circle at 30% 20%,#f0aaff,#9752ca 32%,#282f87 62%,#080e29 85%);
+box-shadow:
+inset -30px -35px 65px #030711ca,
+inset 12px 12px 40px #ffffff45,
+0 0 85px #b55cff65;
+transform:rotate(-17deg)
+}
+.planet:after{
+content:"";position:absolute;inset:-12%;
+border-radius:50%;
+background:
+repeating-radial-gradient(ellipse at 70% 75%,transparent 0 25px,#ffffff15 26px 28px,transparent 30px 49px);
+transform:rotate(34deg)
+}
+.orbit-label{
+position:absolute;z-index:3;
+background:#0c1420df;border:1px solid #ffffff3d;
+padding:11px 15px;border-radius:12px;
+font-size:11px;line-height:1.5;
+box-shadow:0 12px 35px #0007
+}
+.orbit-label b{display:block;color:var(--lime);font-size:12px}
+.label-one{top:12%;left:0;transform:rotate(-6deg)}
+.label-two{right:0;top:44%;transform:rotate(6deg)}
+.label-three{bottom:13%;left:6%;transform:rotate(4deg)}
+.orbit-mark{
+position:absolute;bottom:0;right:2%;
+font-size:9px;color:#a6b4d2;letter-spacing:4px
+}
+.hero-bottom{
+position:absolute;bottom:20px;left:0;right:0;
+display:flex;align-items:center;gap:18px;
+color:#7889a7;font-size:10px;letter-spacing:3px;text-transform:uppercase
+}
+.hero-bottom:after{content:"";height:1px;flex:1;background:#ffffff28}
+.section{padding:95px 0;position:relative}
+.section-head{max-width:900px;margin-bottom:37px}
+.section-head h2{
+font-size:clamp(2.3rem,5vw,4.8rem);
+line-height:1.09;letter-spacing:-.065em;margin:14px 0 20px
+}
+.section-head p{color:var(--muted);max-width:700px;font-size:16px}
+.highlight{color:var(--lime)}
+.pink{color:var(--pink)}
+.cyan{color:var(--cyan)}
+.launch-pad{
+padding:44px;border:1px solid #ffffff24;
+border-radius:30px;
+background:
+radial-gradient(ellipse at 95% 5%,#ed41a91a,transparent 48%),
+linear-gradient(140deg,#171b31,#0c1926)
+}
+.category-details{margin-top:30px}
+.category-details summary{
+display:flex;justify-content:space-between;align-items:center;
+gap:16px;cursor:pointer;list-style:none;
+padding:20px 24px;border:1px solid #d9ff6870;
+border-radius:14px;background:#d9ff6812;
+font-weight:800
+}
+.category-details summary::-webkit-details-marker{display:none}
+.summary-meta{color:var(--lime);font-size:12px}
+.category-details summary:after{content:"+";font-size:25px;color:var(--lime)}
+.category-details[open] summary:after{content:"−"}
+.category-grid{
+display:grid;grid-template-columns:repeat(4,1fr);
+gap:10px;margin-top:15px
+}
+.category-grid a{
+display:flex;align-items:center;justify-content:space-between;gap:9px;
+min-height:67px;padding:14px 16px;
+border:1px solid #ffffff24;background:#ffffff07;
+border-radius:12px;text-decoration:none;
+font-size:13px;font-weight:750;transition:.2s
+}
+.category-grid a:hover{
+background:#d9ff6819;border-color:var(--lime);
+transform:translateY(-2px)
+}
+.category-grid a i{font-style:normal;color:var(--pink);font-size:18px}
+.process{
+display:grid;grid-template-columns:repeat(3,1fr);
+gap:15px;margin-top:36px
+}
+.process-item{
+padding:24px;min-height:205px;
+border:1px solid var(--line);border-radius:18px;
+background:#11182ad9
+}
+.process-number{font-size:12px;font-weight:850;color:var(--pink)}
+.process-item h3{font-size:19px;line-height:1.25;margin:17px 0 10px}
+.process-item p{font-size:13px;color:var(--muted);margin:0}
+.console{
+display:grid;grid-template-columns:.8fr 1.2fr;
+gap:32px;align-items:center;
+border-block:1px solid #ffffff26;
+padding-block:45px
+}
+.console-graphic{
+min-height:250px;display:grid;place-items:center;
+border-radius:18px;position:relative;overflow:hidden;
+background:
+radial-gradient(circle,#193b48,transparent 70%),
+repeating-linear-gradient(0deg,#ffffff0b 0 1px,transparent 1px 23px),
+#10192a
+}
+.console-graphic:before{
+content:"QC";
+font-size:clamp(7rem,15vw,12rem);font-weight:1000;
+letter-spacing:-.15em;color:transparent;
+-webkit-text-stroke:2px var(--cyan);
+text-shadow:8px 12px 0 #ff64bc33;
+transform:skew(-12deg)
+}
+.console-graphic:after{
+content:"VISUAL INSPECTION // 01";
+position:absolute;bottom:14px;left:16px;
+font:10px monospace;letter-spacing:2px;color:var(--lime)
+}
+.console h2{font-size:clamp(2rem,4vw,3.5rem);letter-spacing:-.06em;line-height:1.1}
+.console p{color:var(--muted)}
+.console ul{padding-left:20px;color:#d8e2f3}
+.console li{margin:8px 0}
+.directory-head{
+display:flex;align-items:end;justify-content:space-between;
+gap:25px;margin-bottom:29px
+}
+.directory-head p{max-width:340px;color:var(--muted);font-size:14px}
+.directory{
+display:grid;grid-template-columns:repeat(4,1fr);
+gap:9px;list-style:none;padding:0;margin:0
+}
+.directory a{
+display:flex;align-items:center;gap:10px;
+min-height:70px;text-decoration:none;
+border:1px solid #ffffff1f;background:#0f1626;
+padding:13px;border-radius:10px;
+font-size:12px;line-height:1.4;font-weight:700;
+transition:background .2s,border-color .2s
+}
+.directory a:hover{border-color:var(--cyan);background:#1c2a3e}
+.directory a b{
+font:12px monospace;color:var(--lime);flex:0 0 25px
+}
+.article-group{margin-top:72px}
+.group-title{
+display:flex;align-items:center;gap:18px;
+padding:0 0 15px;border-bottom:1px solid #ffffff45;
+margin-bottom:22px
+}
+.group-title span{color:var(--pink);font:12px monospace;white-space:nowrap}
+.group-title h2{font-size:25px;letter-spacing:-.04em;margin:0}
+.article-grid{
+display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+gap:16px
+}
+.guide{
+min-width:0;scroll-margin-top:95px;
+display:flex;flex-direction:column;
+padding:30px;border:1px solid var(--line);
+border-radius:var(--radius);
+background:linear-gradient(150deg,#151c30,#0c1422);
+position:relative;overflow:hidden
+}
+.guide:before{
+content:"";position:absolute;right:-60px;top:-70px;
+width:160px;height:160px;border-radius:50%;
+background:radial-gradient(circle,#9b83ff20,transparent 70%);
+pointer-events:none
+}
+.guide:nth-child(3n+2):before{
+background:radial-gradient(circle,#ff64bc20,transparent 70%)
+}
+.guide:nth-child(4n):before{
+background:radial-gradient(circle,#6cecff20,transparent 70%)
+}
+.index-no{font-size:12px;color:var(--lime);margin-bottom:15px}
+.guide h3{
+font-size:clamp(20px,2.2vw,25px);
+line-height:1.27;letter-spacing:-.035em;margin-bottom:18px;
+max-width:96%
+}
+.guide p{font-size:14px;color:#becadd;line-height:1.85;margin:0 0 13px}
+.guide strong{color:#f0f5ff}
+.guide ul{margin:0 0 13px;padding-left:20px;color:#becadd;font-size:14px}
+.guide li{margin:4px 0}
+.guide-links{
+display:flex;flex-wrap:wrap;gap:15px;margin-top:auto;
+padding-top:18px;border-top:1px solid #ffffff1c
+}
+.guide-links a{
+font-size:12px;font-weight:800;text-decoration:none;color:var(--cyan)
+}
+.guide-links a:last-child{color:var(--lime)}
+.guide-links a:hover{text-decoration:underline}
+.feature-guide{
+background:linear-gradient(140deg,#242142,#101a33);
+border-color:#9b83ff65
+}
+.faq-area{
+margin-top:100px;padding:43px;
+border-radius:26px;border:1px solid #ffffff2c;
+background:linear-gradient(140deg,#1a1630,#0c2130)
+}
+.faq-area h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.06em}
+.faq-item{border-bottom:1px solid #ffffff29}
+.faq-item summary{
+padding:20px 0;cursor:pointer;
+font-weight:800;list-style:none;
+display:flex;justify-content:space-between;gap:10px
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";color:var(--lime);font-size:20px}
+.faq-item[open] summary:after{content:"−"}
+.faq-item p{color:#c1cee2;font-size:14px;max-width:850px}
+.cta-final{
+text-align:center;padding:95px 25px;margin-top:90px;
+border-radius:30px;position:relative;overflow:hidden;
+background:
+radial-gradient(ellipse at center,#c46fff40,transparent 60%),
+repeating-radial-gradient(ellipse at 50% 100%,transparent 0 24px,#ffffff16 25px 26px),
+#17152f
+}
+.cta-final h2{
+font-size:clamp(2.5rem,6vw,5rem);
+line-height:1.05;letter-spacing:-.075em;
+margin:15px auto 20px;max-width:760px
+}
+.cta-final p{color:#c8d1ea;max-width:570px;margin:0 auto 25px}
+.cta-final .actions{justify-content:center}
+footer{padding:55px 0 35px;color:#a8b6cd}
+.footer-grid{
+display:grid;grid-template-columns:1fr 1fr;
+gap:30px;padding-bottom:25px;border-bottom:1px solid #ffffff24
+}
+footer h3{font-size:15px;color:var(--ink)}
+footer p{font-size:12px;max-width:630px;line-height:1.9}
+.footer-links{display:flex;flex-wrap:wrap;gap:17px}
+.footer-links a{font-size:12px;text-decoration:none}
+.footer-links a:hover{color:var(--lime)}
+.footer-bottom{
+padding-top:25px;display:flex;justify-content:space-between;
+gap:20px;flex-wrap:wrap;font:11px monospace
+}
+@media(max-width:1000px){
+.nav{gap:13px}
+.hero{grid-template-columns:1fr .8fr}
+.orbit-zone{height:470px}
+.category-grid,.directory{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:760px){
+.wrap{width:min(100% - 30px,550px)}
+.header-inner{min-height:65px}
+.nav a:not(.nav-cta){display:none}
+.hero{
+grid-template-columns:1fr;min-height:auto;
+padding:65px 0 55px;gap:0
+}
+h1{font-size:clamp(4.4rem,17vw,7.5rem)}
+.hero-intro{font-size:16px}
+.orbit-zone{height:370px;margin-top:15px}
+.orbit{max-width:350px}
+.label-one{left:-2%}
+.label-two{right:-2%}
+.hero-bottom{display:none}
+.section{padding:65px 0}
+.launch-pad{padding:22px}
+.category-grid{grid-template-columns:repeat(2,1fr)}
+.process{grid-template-columns:1fr}
+.process-item{min-height:auto}
+.console{grid-template-columns:1fr}
+.directory-head{display:block}
+.directory{grid-template-columns:repeat(2,1fr)}
+.article-grid{grid-template-columns:1fr}
+.guide{padding:24px}
+.faq-area{padding:25px}
+.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:380px){
+.category-grid,.directory{grid-template-columns:1fr}
+h1{font-size:17vw}
+.orbit-zone{height:315px}
+.orbit-label{font-size:9px;padding:7px}
+.actions .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*:before,*:after{transition:none!important;animation:none!important}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {
+   "@type":"WebPage",
+   "@id":"#page",
+   "name":"Kakobuy Links – Polski przewodnik",
+   "description":"Przewodnik po linkach Kakobuy, kontroli QC, kategoriach, rozmiarach i kosztach.",
+   "inLanguage":"pl-PL",
+   "mainEntity":{"@id":"#faq"}
+  },
+  {
+   "@type":"FAQPage",
+   "@id":"#faq",
+   "inLanguage":"pl-PL",
+   "mainEntity":[
+    {
+     "@type":"Question",
+     "name":"Czym są Kakobuy links?",
+     "acceptedAnswer":{
+      "@type":"Answer",
+      "text":"Kakobuy links to odnośniki do ofert produktów. Przed zakupem należy sprawdzić szczegóły oferty, wariant, cenę i zdjęcia QC, jeśli są dostępne."
+     }
+    },
+    {
+     "@type":"Question",
+     "name":"Czy Kakobuy spreadsheet i Kakobuy links to to samo?",
+     "acceptedAnswer":{
+      "@type":"Answer",
+      "text":"Spreadsheet to uporządkowana tabela wielu produktów, a pojedynczy link prowadzi do konkretnej oferty. Arkusz może zawierać odnośniki, kategorie, opisy i uwagi."
+     }
+    },
+    {
+     "@type":"Question",
+     "name":"Jak sprawdzić zdjęcia Kakobuy QC?",
+     "acceptedAnswer":{
+      "@type":"Answer",
+      "text":"Porównaj zdjęcia rzeczywistego egzemplarza z opisem, zwracając uwagę na proporcje, szwy, materiał, detale oraz oznaczenia rozmiaru."
+     }
+    },
+    {
+     "@type":"Question",
+     "name":"Czy koszt produktu obejmuje wysyłkę do Polski?",
+     "acceptedAnswer":{
+      "@type":"Answer",
+      "text":"Nie należy tego zakładać. Całkowity koszt może obejmować cenę produktu, przesyłkę, opłaty obsługi, VAT, ewentualne cło oraz inne należności."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<header class="site-header">
+ <div class="wrap header-inner">
+  <a class="logo" href="#top" aria-label="Kakobuy Links – strona główna">
+   <span class="logo-icon">K</span>
+   <span><b>LINK//LAB</b><small>POLSKA / INDEX</small></span>
+  </a>
+  <nav class="nav" aria-label="Nawigacja główna">
+   <a href="#start">Start</a>
+   <a href="#categories">Kategorie</a>
+   <a href="#guides">Poradniki</a>
+   <a href="#faq">FAQ</a>
+   <a class="nav-cta" href="#categories">Odkryj linki ↗</a>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+ <section class="hero wrap" aria-labelledby="hero-title">
+  <div class="hero-copy">
+   <div class="eyebrow">Polski przewodnik / Link discovery</div>
+   <h1 id="hero-title">
+    <span>Kakobuy</span>
+    <span><em class="outlined">links.</em></span>
+   </h1>
+   <p class="hero-intro">
+    Znajduj, porównuj i sprawdzaj <strong>Kakobuy links</strong>.
+    Poznaj listy produktów, kategorie, spreadsheet, zdjęcia QC,
+    rozmiary i zasady oceny ofert przed zakupem.
+   </p>
+   <div class="actions">
+    <a class="btn btn-primary"
+       href="https://kakobuycnsheets.com/index.html"
+       target="_blank" rel="noopener nofollow">
+      kakobuy spreadsheet <span aria-hidden="true">↗</span>
+    </a>
+    <a class="btn btn-secondary"
+       href="https://kakobuycnsheets.com/index.html"
+       target="_blank" rel="noopener nofollow">
+      buy it <span aria-hidden="true">↗</span>
+    </a>
+   </div>
+   <div class="hero-foot mono">
+    <span><b>20</b> / poradników</span>
+    <span><b>13</b> / kategorii</span>
+    <span><b>PL</b> / przewodnik</span>
+   </div>
+  </div>
+  <div class="orbit-zone" aria-hidden="true">
+   <div class="orbit">
+    <div class="orbit-ring"></div>
+    <div class="planet"></div>
+    <div class="orbit-label label-one">
+     <b>01 // DISCOVER</b>
+     Linki i kategorie
+    </div>
+    <div class="orbit-label label-two">
+     <b>02 // INSPECT</b>
+     Zdjęcia QC
+    </div>
+    <div class="orbit-label label-three">
+     <b>03 // COMPARE</b>
+     Rozmiar i koszt
+    </div>
+   </div>
+   <span class="orbit-mark">NEON DIRECTORY SYSTEM</span>
+  </div>
+  <div class="hero-bottom mono">Scroll / eksploruj bazę wiedzy</div>
+ </section>
+
+ <section class="section" id="start">
+  <div class="wrap">
+   <div class="section-head">
+    <span class="eyebrow">01 / Navigation terminal</span>
+    <h2>Twoja mapa <span class="highlight">Kakobuy links.</span></h2>
+    <p>
+     Zamiast przeglądać przypadkowe odnośniki, wybierz kategorię,
+     poznaj sposób weryfikacji produktu i przejdź do katalogu.
+     Ta strona jest niezależnym przewodnikiem, a nie sklepem.
+    </p>
+   </div>
+
+   <div class="launch-pad">
+    <div class="mono" style="color:var(--cyan);font-size:12px">
+     DIRECTORY://PRODUCT-CATEGORIES
+    </div>
+    <h2 style="margin:12px 0 8px;font-size:clamp(24px,4vw,37px);letter-spacing:-.05em">
+     Wybierz kategorię produktów
+    </h2>
+    <p style="color:var(--muted);font-size:14px">
+     Rozwiń listę i otwórz wybraną kategorię w zewnętrznym katalogu.
+    </p>
+
+    <details class="category-details" id="categories">
+     <summary>
+      <span>Wszystkie kategorie Kakobuy</span>
+      <span class="summary-meta mono">13 CATEGORY LINKS</span>
+     </summary>
+     <div class="category-grid">
+      <a href="https://kakobuycnsheets.com/category-911-Shoes.html" target="_blank" rel="noopener nofollow">Shoes <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-912-Hoodies%2FSweaters.html" target="_blank" rel="noopener nofollow">Hoodies/Sweaters <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-913-T-Shirts.html" target="_blank" rel="noopener nofollow">T-Shirts <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-914-Jackets.html" target="_blank" rel="noopener nofollow">Jackets <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-915-Pants%2FShorts.html" target="_blank" rel="noopener nofollow">Pants/Shorts <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-916-Headwear.html" target="_blank" rel="noopener nofollow">Headwear <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-917-Sets.html" target="_blank" rel="noopener nofollow">Sets <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-918-underwear%2Funderpants.html" target="_blank" rel="noopener nofollow">Underwear/Underpants <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-919-Jersey.html" target="_blank" rel="noopener nofollow">Jersey <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-920-Accessories.html" target="_blank" rel="noopener nofollow">Accessories <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-921-Bags.html" target="_blank" rel="noopener nofollow">Bag <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-922-Belts.html" target="_blank" rel="noopener nofollow">Belts <i>↗</i></a>
+      <a href="https://kakobuycnsheets.com/category-923-Perfumes.html" target="_blank" rel="noopener nofollow">Perfumes <i>↗</i></a>
+     </div>
+    </details>
+   </div>
+
+   <div class="process">
+    <div class="process-item">
+     <span class="process-number mono">STEP / 01</span>
+     <h3>Odkryj odpowiedni link</h3>
+     <p>Wybierz kategorię i porównaj oferty według rodzaju produktu, wariantu, opisu i dostępnych informacji.</p>
+    </div>
+    <div class="process-item">
+     <span class="process-number mono">STEP / 02</span>
+     <h3>Zweryfikuj produkt</h3>
+     <p>Sprawdź tabelę rozmiarów, zdjęcia QC, warunki zakupu oraz zgodność opisu z wybranym wariantem.</p>
+    </div>
+    <div class="process-item">
+     <span class="process-number mono">STEP / 03</span>
+     <h3>Oszacuj pełny koszt</h3>
+     <p>Przed decyzją uwzględnij produkt, transport, opłaty dodatkowe i możliwe należności importowe.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section">
+  <div class="wrap console">
+   <div class="console-graphic" aria-hidden="true"></div>
+   <div>
+    <span class="eyebrow">02 / Quality control</span>
+    <h2>Dobry link to dopiero <span class="cyan">początek.</span></h2>
+    <p>
+     Znalezienie oferty nie potwierdza jej jakości.
+     Zdjęcia kontroli jakości, czyli QC, pomagają ocenić
+     konkretny egzemplarz, jeśli są udostępnione.
+    </p>
+    <ul>
+     <li>Sprawdź proporcje, materiał i wykonanie.</li>
+     <li>Porównaj rzeczywiste wymiary z tabelą sprzedawcy.</li>
+     <li>Zwróć uwagę na zgodność koloru i wariantu.</li>
+     <li>Nie traktuj zdjęć promocyjnych jako dowodu jakości.</li>
+    </ul>
+    <a class="btn btn-secondary" href="#guide-14">Jak sprawdzać QC? ↗</a>
+   </div>
+  </div>
+ </section>
+
+ <section class="section" id="guides">
+  <div class="wrap">
+   <div class="directory-head">
+    <div class="section-head" style="margin-bottom:0">
+     <span class="eyebrow">03 / Knowledge archive</span>
+     <h2>20 poradników.<br><span class="pink">Jeden indeks.</span></h2>
+    </div>
+    <p>
+     Wybierz temat, aby przejść bezpośrednio do artykułu.
+     Każda sekcja zawiera nawigację do strony głównej
+     oraz zewnętrznego katalogu.
+    </p>
+   </div>
+
+   <nav aria-label="Spis treści poradników">
+    <ol class="directory">
+     <li><a href="#guide-1"><b>01</b>Czym są Kakobuy links?</a></li>
+     <li><a href="#guide-2"><b>02</b>Kakobuy links 2027</a></li>
+     <li><a href="#guide-3"><b>03</b>Spreadsheet i linki</a></li>
+     <li><a href="#guide-4"><b>04</b>Wyszukiwanie ofert</a></li>
+     <li><a href="#guide-5"><b>05</b>Sprawdzanie linków</a></li>
+     <li><a href="#guide-6"><b>06</b>Buty i sneakersy</a></li>
+     <li><a href="#guide-7"><b>07</b>Bluzy i swetry</a></li>
+     <li><a href="#guide-8"><b>08</b>T-shirty i koszulki</a></li>
+     <li><a href="#guide-9"><b>09</b>Kurtki i odzież zimowa</a></li>
+     <li><a href="#guide-10"><b>10</b>Spodnie i szorty</a></li>
+     <li><a href="#guide-11"><b>11</b>Jersey i sport</a></li>
+     <li><a href="#guide-12"><b>12</b>Torby i akcesoria</a></li>
+     <li><a href="#guide-13"><b>13</b>Komplety odzieżowe</a></li>
+     <li><a href="#guide-14"><b>14</b>Zdjęcia QC</a></li>
+     <li><a href="#guide-15"><b>15</b>Dobór rozmiaru</a></li>
+     <li><a href="#guide-16"><b>16</b>Ocena sprzedawcy</a></li>
+     <li><a href="#guide-17"><b>17</b>Wysyłka do Polski</a></li>
+     <li><a href="#guide-18"><b>18</b>Pełny koszt zakupu</a></li>
+     <li><a href="#guide-19"><b>19</b>Najczęstsze błędy</a></li>
+     <li><a href="#guide-20"><b>20</b>Lista kontrolna</a></li>
+    </ol>
+   </nav>
+
+   <div class="article-group">
+    <div class="group-title">
+     <span>CLUSTER / A</span>
+     <h2>Podstawy wyszukiwania linków</h2>
+    </div>
+    <div class="article-grid">
+
+     <article class="guide feature-guide" id="guide-1">
+      <span class="index-no">ARTICLE 01 / BASICS</span>
+      <h3>Kakobuy links – czym są i jak z nich korzystać?</h3>
+      <p>
+       <strong>Kakobuy links</strong> to odnośniki prowadzące do ofert produktów.
+       Mogą znajdować się na stronach tematycznych, w zestawieniach lub
+       arkuszach określanych jako spreadsheets. Link jest punktem wyjścia
+       do sprawdzenia produktu, a nie gwarancją udanego zakupu.
+      </p>
+      <p>
+       Po otwarciu oferty sprawdź nazwę, dostępne warianty, cenę,
+       zdjęcia i opis. Następnie porównaj informacje z innymi ofertami.
+       Szczególnej uwagi wymagają produkty, których wygląd lub rozmiar
+       zależy od konkretnej wersji.
+      </p>
+      <p>
+       Warto zapisywać datę weryfikacji linku. Sprzedawcy mogą zmieniać
+       cenę, zdjęcia, warianty lub dostępność bez zachowania poprzedniej
+       wersji strony.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Katalog produktów ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-2">
+      <span class="index-no">ARTICLE 02 / FRESHNESS</span>
+      <h3>Kakobuy links 2027 – jak znaleźć aktualne oferty?</h3>
+      <p>
+       Szukając frazy <strong>Kakobuy links 2027</strong>, zwracaj uwagę
+       przede wszystkim na aktualność danych, a nie sam rok umieszczony
+       w tytule zestawienia. Data publikacji artykułu nie oznacza,
+       że każda oferta nadal działa.
+      </p>
+      <p>
+       Otwórz link i sprawdź, czy produkt jest dostępny, czy nazwa
+       odpowiada opisowi w zestawieniu oraz czy wybrany wariant
+       zachował tę samą cenę. Jeżeli oferta została usunięta,
+       poszukaj alternatywy w tej samej kategorii.
+      </p>
+      <p>
+       Dobre zestawienie powinno oddzielać linki sprawdzone
+       od niezweryfikowanych. Nie zakładaj, że słowo „updated”
+       oznacza rzeczywistą kontrolę wszystkich pozycji.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Katalog produktów ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-3">
+      <span class="index-no">ARTICLE 03 / SPREADSHEET</span>
+      <h3>Kakobuy spreadsheet a Kakobuy links – różnice</h3>
+      <p>
+       <strong>Kakobuy spreadsheet</strong> oznacza zwykle tabelę
+       z wieloma produktami. Może zawierać nazwy, ceny, kategorie,
+       uwagi i bezpośrednie odnośniki. Pojedynczy Kakobuy link
+       prowadzi natomiast do jednej konkretnej oferty.
+      </p>
+      <p>
+       Arkusz pozwala szybko porównywać produkty i filtrować je
+       według kategorii. Nie zastępuje jednak weryfikacji
+       rzeczywistych informacji na stronie produktu.
+      </p>
+      <p>
+       Najbardziej użyteczne kolumny to: nazwa produktu, kategoria,
+       link, wariant, cena, dostępne materiały QC i data sprawdzenia.
+       Taki układ ogranicza ryzyko pomylenia różnych ofert
+       o podobnie wyglądających zdjęciach.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Otwórz spreadsheet ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-4">
+      <span class="index-no">ARTICLE 04 / SEARCH</span>
+      <h3>Jak skutecznie wyszukiwać Kakobuy product links?</h3>
+      <p>
+       Zamiast wpisywać wyłącznie ogólne hasło „Kakobuy links”,
+       połącz je z rodzajem produktu. Przykładowe zapytania
+       to „Kakobuy shoes links”, „Kakobuy hoodie links”
+       oraz „Kakobuy bags spreadsheet”.
+      </p>
+      <p>
+       Zacznij od wyboru kategorii. Następnie doprecyzuj
+       kolor, materiał, krój i dostępny rozmiar. Jeżeli porównujesz
+       kilka ofert, zapisuj ich identyfikatory oraz najważniejsze
+       różnice w jednym miejscu.
+      </p>
+      <p>
+       Unikaj opierania decyzji wyłącznie na atrakcyjnym zdjęciu
+       miniatury. Podobne fotografie mogą być używane przy
+       produktach o innych wymiarach i parametrach.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Przeglądaj oferty ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-5">
+      <span class="index-no">ARTICLE 05 / VERIFY</span>
+      <h3>Kakobuy links checker – jak sprawdzić ofertę?</h3>
+      <p>
+       Weryfikację linku rozpocznij od sprawdzenia adresu strony.
+       Podejrzane przekierowania, błędy ładowania lub brak
+       podstawowych informacji o produkcie to powody, aby
+       zachować ostrożność.
+      </p>
+      <p>
+       Następnie porównaj nazwę oferty z wyświetlanym zdjęciem
+       i wariantem. Ustal, czy cena obejmuje właściwy produkt,
+       a nie jedynie akcesorium lub opcję dodatkową.
+      </p>
+      <p>
+       Sprawdź też dostępne informacje o zwrotach i ewentualne
+       recenzje, pamiętając, że mogą być niepełne. Nie podawaj
+       danych logowania na nieznanych stronach. Bezpieczny
+       proces zaczyna się od weryfikacji adresu i wiarygodności
+       konkretnego sprzedawcy.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Przejdź do katalogu ↗</a>
+      </div>
+     </article>
+
+    </div>
+   </div>
+
+   <div class="article-group">
+    <div class="group-title">
+     <span>CLUSTER / B</span>
+     <h2>Odzież, obuwie i rozmiary</h2>
+    </div>
+    <div class="article-grid">
+
+     <article class="guide" id="guide-6">
+      <span class="index-no">ARTICLE 06 / FOOTWEAR</span>
+      <h3>Kakobuy shoes links – jak wybierać buty?</h3>
+      <p>
+       W przypadku <strong>Kakobuy shoes links</strong> szczególne
+       znaczenie mają długość wkładki, kształt cholewki oraz
+       rzeczywiste proporcje obuwia. Rozmiar oznaczony jako
+       EU 42 nie musi odpowiadać identycznym wymiarom
+       u każdego producenta.
+      </p>
+      <p>
+       Porównuj długość wkładki w centymetrach z butami,
+       które dobrze na Ciebie pasują. Jeśli są dostępne zdjęcia QC,
+       sprawdź kształt noska, sposób łączenia podeszwy
+       z cholewką i symetrię obu butów.
+      </p>
+      <p>
+       Nie oceniaj jakości jedynie na podstawie fotografii
+       katalogowej. Przy zakupie sprawdź również materiał,
+       sposób pakowania i możliwy wpływ pudełka na koszt wysyłki.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-911-Shoes.html" target="_blank" rel="noopener nofollow">Shoes ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-7">
+      <span class="index-no">ARTICLE 07 / HOODIES</span>
+      <h3>Kakobuy hoodie links – bluzy i swetry</h3>
+      <p>
+       Przy wyborze bluz sprawdź nie tylko rozmiar, ale także
+       krój i skład materiału. Określenia „oversized”,
+       „regular fit” i „slim fit” opisują różne proporcje,
+       które wpływają na ostateczne dopasowanie.
+      </p>
+      <p>
+       Najważniejsze pomiary to szerokość klatki piersiowej,
+       długość całkowita i długość rękawa. Porównaj je
+       z własną bluzą rozłożoną na płaskiej powierzchni.
+      </p>
+      <p>
+       Jeśli analizujesz <strong>Kakobuy hoodie links</strong>,
+       zwróć uwagę na grubość dzianiny, wykończenie ściągaczy
+       i rodzaj nadruku. Sama informacja o gramaturze
+       nie wystarcza do oceny trwałości odzieży.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-912-Hoodies%2FSweaters.html" target="_blank" rel="noopener nofollow">Hoodies/Sweaters ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-8">
+      <span class="index-no">ARTICLE 08 / T-SHIRTS</span>
+      <h3>Kakobuy T-shirt links – materiał i jakość</h3>
+      <p>
+       Szukając koszulek, zwracaj uwagę na skład tkaniny,
+       szerokość ramion, długość oraz sposób wykończenia
+       kołnierzyka. Dwie koszulki w tym samym rozmiarze
+       mogą mieć bardzo różny fason.
+      </p>
+      <p>
+       W przypadku modeli z nadrukiem warto ocenić
+       jego położenie i jakość wykonania.
+       Jeśli dostępne są zdjęcia rzeczywistego egzemplarza,
+       porównaj wielkość grafiki z proporcjami koszulki.
+      </p>
+      <p>
+       Przy zestawieniach <strong>Kakobuy T-shirt links</strong>
+       zapisuj rozmiary w centymetrach, nie tylko oznaczenia
+       S, M lub L. To szczególnie ważne przy luźnych krojach
+       i zakupach od różnych sprzedawców.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-913-T-Shirts.html" target="_blank" rel="noopener nofollow">T-Shirts ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-9">
+      <span class="index-no">ARTICLE 09 / OUTERWEAR</span>
+      <h3>Kakobuy jacket links – kurtki i odzież zimowa</h3>
+      <p>
+       W przypadku kurtek warto zacząć od warunków,
+       w których będą używane. Inne cechy są ważne
+       przy lekkiej kurtce przejściowej, a inne
+       przy modelu przeznaczonym na zimę.
+      </p>
+      <p>
+       Sprawdź opis ocieplenia, materiał zewnętrzny,
+       długość rękawów, zapięcie i dostępność kaptura.
+       Informacja „winter jacket” nie potwierdza
+       konkretnego poziomu ochrony przed zimnem.
+      </p>
+      <p>
+       Porównując <strong>Kakobuy jacket links</strong>,
+       oceniaj również wykończenie szwów, zamki
+       i kieszenie. Przy planowaniu przesyłki pamiętaj,
+       że duże kurtki mogą wpływać na objętość paczki
+       i koszt transportu.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-914-Jackets.html" target="_blank" rel="noopener nofollow">Jackets ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-10">
+      <span class="index-no">ARTICLE 10 / PANTS</span>
+      <h3>Kakobuy pants links – spodnie i szorty</h3>
+      <p>
+       Wybór spodni wymaga sprawdzenia większej liczby
+       pomiarów niż sam obwód pasa. Istotne są również
+       szerokość bioder, długość nogawki, wysokość stanu
+       i szerokość nogawki na dole.
+      </p>
+      <p>
+       Przy spodniach typu wide leg lub cargo oceń,
+       czy szerokość nogawki odpowiada oczekiwanemu
+       stylowi. W przypadku szortów zwróć uwagę
+       na długość od pasa do końca nogawki.
+      </p>
+      <p>
+       Porównując <strong>Kakobuy pants links</strong>,
+       wykorzystaj wymiary własnej odzieży
+       zamiast polegać wyłącznie na etykiecie rozmiaru.
+       Sprawdź także elastyczność materiału
+       i ewentualną tolerancję wymiarów podaną w ofercie.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-915-Pants%2FShorts.html" target="_blank" rel="noopener nofollow">Pants/Shorts ↗</a>
+      </div>
+     </article>
+
+    </div>
+   </div>
+
+   <div class="article-group">
+    <div class="group-title">
+     <span>CLUSTER / C</span>
+     <h2>Produkty specjalne i kontrola jakości</h2>
+    </div>
+    <div class="article-grid">
+
+     <article class="guide" id="guide-11">
+      <span class="index-no">ARTICLE 11 / JERSEY</span>
+      <h3>Kakobuy jersey links – koszulki sportowe</h3>
+      <p>
+       Podczas przeglądania koszulek sportowych
+       sprawdź sezon, wersję produktu i tabelę rozmiarów.
+       Modele określane jako „player” i „fan”
+       mogą różnić się krojem, materiałem
+       oraz sposobem dopasowania.
+      </p>
+      <p>
+       Ważne są również wykończenie kołnierzyka,
+       rozmieszczenie nadruków i jakość szwów.
+       Przy personalizowanych produktach zweryfikuj
+       pisownię i wybrany numer przed zamówieniem.
+      </p>
+      <p>
+       Zwracaj uwagę na autentyczność i prawa
+       do znaków towarowych. Sam link lub zdjęcie
+       nie potwierdzają, że produkt jest oficjalnie
+       licencjonowany.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-919-Jersey.html" target="_blank" rel="noopener nofollow">Jersey ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-12">
+      <span class="index-no">ARTICLE 12 / ACCESSORIES</span>
+      <h3>Kakobuy bag links – torby i akcesoria</h3>
+      <p>
+       Przy wyborze torby porównaj podane wymiary
+       z przedmiotami, które zamierzasz w niej nosić.
+       Zdjęcia produktów nie zawsze pokazują
+       rzeczywistą pojemność.
+      </p>
+      <p>
+       Sprawdź rodzaj materiału, zamki, mocowanie
+       paska i układ przegródek. Przy plecakach
+       ważna jest również konstrukcja szelek.
+       W przypadku pasków sprawdź ich szerokość
+       i długość, a przy nakryciach głowy obwód.
+      </p>
+      <p>
+       Jeśli przeglądasz zapachy, zweryfikuj zasady
+       przewozu płynów i ograniczenia przewoźnika.
+       Nie każda metoda transportu obsługuje perfumy.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-921-Bags.html" target="_blank" rel="noopener nofollow">Bags ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-13">
+      <span class="index-no">ARTICLE 13 / SETS</span>
+      <h3>Kakobuy sets links – komplety odzieżowe</h3>
+      <p>
+       Komplet odzieżowy często składa się z dwóch
+       części, ale zawartość zestawu należy zawsze
+       potwierdzić w opisie. Niektóre oferty pozwalają
+       wybrać osobno górę i dół.
+      </p>
+      <p>
+       Sprawdź, czy oba elementy mają odpowiednie
+       rozmiary i czy kolorystyka jest zgodna.
+       Porównaj materiał i szczegóły wykonania,
+       szczególnie jeśli zestaw ma być używany
+       jako jednolity strój.
+      </p>
+      <p>
+       Przeglądając <strong>Kakobuy sets links</strong>,
+       zwróć uwagę, czy podana cena obejmuje
+       wszystkie części. Pomaga to uniknąć
+       nieporozumień wynikających z ofert,
+       których miniatura przedstawia cały komplet.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/category-917-Sets.html" target="_blank" rel="noopener nofollow">Sets ↗</a>
+      </div>
+     </article>
+
+     <article class="guide feature-guide" id="guide-14">
+      <span class="index-no">ARTICLE 14 / QC INSPECTION</span>
+      <h3>Kakobuy QC links – jak analizować zdjęcia?</h3>
+      <p>
+       <strong>Kakobuy QC</strong> oznacza kontrolę jakości,
+       najczęściej opartą na zdjęciach konkretnego produktu.
+       Materiały QC mogą pomóc dostrzec niezgodności,
+       ale nie zastępują fizycznego sprawdzenia towaru.
+      </p>
+      <p>
+       Rozpocznij od zdjęcia całego produktu.
+       Następnie sprawdź zbliżenia szwów,
+       nadruków, materiału, metek i innych detali.
+       Jeśli masz zdjęcia referencyjne,
+       porównuj podobne kąty i oświetlenie.
+      </p>
+      <p>
+       Zwróć uwagę na widoczne uszkodzenia,
+       różnice kolorystyczne, symetrię i oznaczenia
+       rozmiaru. Jeżeli fotografii jest za mało,
+       nie wyciągaj kategorycznych wniosków.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Przeglądaj katalog ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-15">
+      <span class="index-no">ARTICLE 15 / SIZE GUIDE</span>
+      <h3>Kakobuy size guide – jak dobrać rozmiar?</h3>
+      <p>
+       Przy zakupach odzieży oznaczenia S, M, L
+       lub XL nie są wystarczającym sposobem
+       porównywania różnych ofert.
+       Najbardziej użyteczne są rzeczywiste
+       wymiary podane w centymetrach.
+      </p>
+      <p>
+       Rozłóż dobrze dopasowaną odzież na płasko
+       i zmierz ją w sposób zgodny z tabelą sprzedawcy.
+       Przy bluzach porównaj szerokość klatki,
+       długość i rękawy. Przy spodniach
+       sprawdź pas, biodra, stan i nogawkę.
+      </p>
+      <p>
+       Pamiętaj, że materiał elastyczny zachowuje się
+       inaczej niż sztywna tkanina. Sprawdź również,
+       czy sprzedawca podaje tolerancję pomiaru.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Otwórz katalog ↗</a>
+      </div>
+     </article>
+
+    </div>
+   </div>
+
+   <div class="article-group">
+    <div class="group-title">
+     <span>CLUSTER / D</span>
+     <h2>Zakupy, transport i bezpieczeństwo</h2>
+    </div>
+    <div class="article-grid">
+
+     <article class="guide" id="guide-16">
+      <span class="index-no">ARTICLE 16 / SELLER CHECK</span>
+      <h3>Kakobuy seller review – jak oceniać ofertę?</h3>
+      <p>
+       Ocena sprzedawcy powinna opierać się
+       na kilku sygnałach, a nie pojedynczym komentarzu.
+       Sprawdź spójność opisów, dostępność szczegółowych
+       zdjęć, informacje o realizacji i warunki zwrotu.
+      </p>
+      <p>
+       Jeżeli istnieją recenzje kupujących, zwracaj
+       uwagę na konkretne informacje dotyczące
+       jakości, wymiarów oraz zgodności towaru.
+       Ogólne pochwały bez szczegółów mają
+       ograniczoną wartość informacyjną.
+      </p>
+      <p>
+       Nie traktuj wysokiej oceny ani liczby zamówień
+       jako gwarancji. Zawsze sprawdzaj konkretny
+       produkt i obowiązujące zasady transakcji.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Zobacz oferty ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-17">
+      <span class="index-no">ARTICLE 17 / SHIPPING PL</span>
+      <h3>Kakobuy shipping to Poland – co sprawdzić?</h3>
+      <p>
+       Koszt przesyłki do Polski zależy między innymi
+       od wagi, wymiarów paczki, wybranej usługi
+       i zasad przewoźnika. Nie należy zakładać,
+       że najtańsza metoda będzie odpowiednia
+       dla każdego rodzaju towaru.
+      </p>
+      <p>
+       Przed wyborem transportu zweryfikuj ograniczenia
+       dotyczące płynów, baterii i innych przedmiotów.
+       Sprawdź możliwość śledzenia paczki,
+       zasady reklamacji oraz ewentualne ubezpieczenie.
+      </p>
+      <p>
+       Pamiętaj, że czas dostawy może się zmieniać
+       w zależności od odprawy celnej i warunków
+       logistycznych. Deklarowany termin traktuj
+       jako szacunek, jeśli nie jest gwarantowany.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Katalog produktów ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-18">
+      <span class="index-no">ARTICLE 18 / TOTAL COST</span>
+      <h3>Kakobuy shipping cost – jak obliczyć wydatki?</h3>
+      <p>
+       Cena produktu to tylko jeden element
+       całkowitego wydatku. Do kalkulacji dodaj
+       opłatę za transport, możliwe prowizje,
+       ubezpieczenie i należności importowe,
+       jeśli mają zastosowanie.
+      </p>
+      <p>
+       Podstawowy model to: <strong>produkt + obsługa
+       + transport + podatki i opłaty</strong>.
+       Jeżeli kupujesz kilka rzeczy, oblicz również
+       koszt przypadający na jeden produkt
+       po podzieleniu wydatków związanych z paczką.
+      </p>
+      <p>
+       W przypadku importu do Polski sprawdź
+       aktualne zasady VAT, cła oraz odprawy.
+       Nie zakładaj automatycznie, że dowolna
+       metoda wysyłki usuwa obowiązki podatkowe.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Sprawdź katalog ↗</a>
+      </div>
+     </article>
+
+     <article class="guide" id="guide-19">
+      <span class="index-no">ARTICLE 19 / MISTAKES</span>
+      <h3>Kakobuy links – najczęstsze błędy</h3>
+      <p>
+       Jeden z częstych błędów to wybór produktu
+       wyłącznie na podstawie miniatury.
+       Innym jest pomijanie tabeli rozmiarów
+       lub przyjmowanie, że zdjęcia promocyjne
+       pokazują dokładnie dostarczany egzemplarz.
+      </p>
+      <p>
+       Problematyczne bywa również korzystanie
+       ze starych list linków. Oferta może prowadzić
+       do produktu o zmienionej cenie, nazwie
+       lub dostępnych wariantach.
+      </p>
+      <p>
+       Przed zakupem zapisz najważniejsze parametry,
+       sprawdź pełny koszt oraz przeczytaj warunki
+       zwrotu. Unikaj też zamawiania produktów,
+       których pochodzenia lub legalności
+       nie możesz odpowiednio zweryfikować.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Przejdź do katalogu ↗</a>
+      </div>
+     </article>
+
+     <article class="guide feature-guide" id="guide-20">
+      <span class="index-no">ARTICLE 20 / FINAL CHECKLIST</span>
+      <h3>Kakobuy links checklist – lista przed zakupem</h3>
+      <p>
+       Zanim przejdziesz do transakcji, wykonaj
+       krótką kontrolę. Pozwoli to ograniczyć
+       liczbę pomyłek podczas porównywania ofert.
+      </p>
+      <ul>
+       <li>Czy link prowadzi do właściwego produktu?</li>
+       <li>Czy wybrany wariant jest dostępny?</li>
+       <li>Czy rozmiar sprawdzono w centymetrach?</li>
+       <li>Czy opis i zdjęcia są ze sobą zgodne?</li>
+       <li>Czy przeanalizowano dostępne zdjęcia QC?</li>
+       <li>Czy sprawdzono zasady zwrotu?</li>
+       <li>Czy znany jest szacunkowy koszt całkowity?</li>
+       <li>Czy produkt może być legalnie importowany?</li>
+      </ul>
+      <p>
+       Żadna lista nie eliminuje całego ryzyka,
+       ale uporządkowany proces pomaga podejmować
+       bardziej świadome decyzje zakupowe.
+      </p>
+      <div class="guide-links">
+       <a href="#top">↑ Strona główna</a>
+       <a href="https://kakobuycnsheets.com/index.html" target="_blank" rel="noopener nofollow">Odkryj spreadsheet ↗</a>
+      </div>
+     </article>
+
+    </div>
+   </div>
+
+   <section class="faq-area" id="faq" aria-labelledby="faq-title">
+    <span class="eyebrow">04 / Answers terminal</span>
+    <h2 id="faq-title">Kakobuy links <span class="highlight">FAQ.</span></h2>
+    <p style="color:var(--muted)">
+     Krótkie odpowiedzi na podstawowe pytania
+     dotyczące linków, tabel i kontroli produktów.
+    </p>
+
+    <details class="faq-item">
+     <summary>Czym są Kakobuy links?</summary>
+     <p>
+      Kakobuy links to odnośniki do ofert produktów.
+      Przed zakupem należy sprawdzić szczegóły oferty,
+      wariant, cenę i zdjęcia QC, jeśli są dostępne.
+     </p>
+    </details>
+    <details class="faq-item">
+     <summary>Czy Kakobuy spreadsheet i Kakobuy links to to samo?</summary>
+     <p>
+      Spreadsheet to uporządkowana tabela wielu produktów,
+      a pojedynczy link prowadzi do konkretnej oferty.
+      Arkusz może zawierać odnośniki, kategorie, opisy i uwagi.
+     </p>
+    </details>
+    <details class="faq-item">
+     <summary>Jak sprawdzić zdjęcia Kakobuy QC?</summary>
+     <p>
+      Porównaj zdjęcia rzeczywistego egzemplarza z opisem,
+      zwracając uwagę na proporcje, szwy, materiał,
+      detale oraz oznaczenia rozmiaru.
+     </p>
+    </details>
+    <details class="faq-item">
+     <summary>Czy koszt produktu obejmuje wysyłkę do Polski?</summary>
+     <p>
+      Nie należy tego zakładać. Całkowity koszt może obejmować
+      cenę produktu, przesyłkę, opłaty obsługi, VAT,
+      ewentualne cło oraz inne należności.
+     </p>
+    </details>
+   </section>
+
+   <section class="cta-final" aria-labelledby="cta-title">
+    <span class="eyebrow" style="justify-content:center">
+     Final destination / External catalog
+    </span>
+    <h2 id="cta-title">
+     Odkryj więcej.<br>
+     <span class="highlight">Sprawdzaj mądrzej.</span>
+    </h2>
+    <p>
+     Przejdź do zewnętrznego katalogu, przejrzyj
+     kategorie i porównaj dostępne oferty.
+     Pamiętaj o samodzielnej kontroli produktu.
+    </p>
+    <div class="actions">
+     <a class="btn btn-primary"
+        href="https://kakobuycnsheets.com/index.html"
+        target="_blank" rel="noopener nofollow">
+      Otwórz Kakobuy Spreadsheet <span aria-hidden="true">↗</span>
+     </a>
+     <a class="btn btn-secondary" href="#top">
+      Wróć na początek ↑
+     </a>
+    </div>
+   </section>
+
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="footer-grid">
+   <div>
+    <h3>LINK//LAB POLSKA</h3>
+    <p>
+     Niezależny przewodnik informacyjny dotyczący
+     Kakobuy links, kategorii produktów, rozmiarów,
+     kontroli jakości i zagadnień związanych
+     z zakupami międzynarodowymi.
+    </p>
+    <p>
+     Nie jesteśmy powiązani z Kakobuy, Weidian,
+     Tmall ani operatorami zewnętrznych katalogów.
+     Nie prowadzimy sprzedaży, wysyłki ani obsługi
+     zamówień. Nazwy marek należą do ich właścicieli.
+    </p>
+   </div>
+   <div>
+    <h3>Ważne informacje</h3>
+    <p>
+     Linki zewnętrzne prowadzą do serwisów niezależnych
+     od tej strony. Informacje o cenach, dostępności,
+     jakości i transporcie należy sprawdzać u właściwego
+     dostawcy. Zakupy wiążą się z ryzykiem.
+     Niektóre linki mogą mieć charakter afiliacyjny.
+    </p>
+    <div class="footer-links">
+     <a href="#top">Strona główna</a>
+     <a href="#categories">Kategorie</a>
+     <a href="#guides">Poradniki</a>
+     <a href="#faq">FAQ</a>
+     <a href="https://kakobuycnsheets.com/index.html"
+        target="_blank" rel="noopener nofollow">Katalog zewnętrzny ↗</a>
+    </div>
+   </div>
+  </div>
+  <div class="footer-bottom">
+   <span>© 2026 LINK//LAB POLSKA · Informational resource</span>
+   <span>INDEPENDENT / NOT AFFILIATED</span>
+  </div>
+ </div>
+</footer>
+</body>
+</html>
